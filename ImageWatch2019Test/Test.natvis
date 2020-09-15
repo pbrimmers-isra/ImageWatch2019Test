@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <UIVisualizer ServiceId="{A452AFEA-3DF6-46BB-9177-C0B08F318025}" Id="1"
+                MenuName="Add to Image Watch"/>
+  <Type Name="test_img">
+    <UIVisualizer ServiceId="{A452AFEA-3DF6-46BB-9177-C0B08F318025}" Id="1" />
+  </Type>
+
+  <Type Name="test_img">
+    <DisplayString>test_img</DisplayString>
+    <Expand>
+      <Synthetic Name="[type]">
+        <DisplayString>UINT8</DisplayString>
+      </Synthetic>
+      <Synthetic Name="[channels]">
+        <DisplayString>1</DisplayString>
+      </Synthetic>
+      <Item Name="[width]">m_rect.Width</Item>
+      <Item Name="[height]">m_rect.Height</Item>
+      <Item Name="[data]">m_pDots</Item>
+      <Item Name="[stride]">m_nPitch</Item>
+    </Expand>
+  </Type>
+</AutoVisualizer>
